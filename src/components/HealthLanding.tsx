@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import saudeImage from "@/assets/SAUDE.png";
 import referenciasImage from "@/assets/referencias.png";
+import medicoImage from "@/assets/medico.webp";
 import visaImage from "@/assets/visa.webp";
 import masterImage from "@/assets/master.webp";
 import eloImage from "@/assets/elo.webp";
 import pixImage from "@/assets/pix.webp";
-import doctorImage from "@/assets/doctor.jpg";
 
 const CHECKOUT_URL = "https://checkout.example.com/health-brain-boost";
 
@@ -108,57 +108,27 @@ export default function HealthLanding() {
 
         {/* Content that appears after 20 seconds */}
         {showContent && (
-          <div className="space-y-8">
-            {/* Scientific References Block */}
-            <div className="px-2">
-              <div className="w-full">
-                <img 
-                  src={referenciasImage} 
-                  alt="Referências Científicas e Estudos Clínicos" 
-                  className="w-full h-auto object-contain rounded-lg"
-                />
-              </div>
+          <div className="space-y-0">
+            {/* Doctor Image Block */}
+            <div className="w-full">
+              <img 
+                src={medicoImage} 
+                alt="Dr. Gabriel Kreiman - Neurocientista" 
+                className="w-full h-auto object-cover"
+              />
             </div>
 
-            {/* Doctor Specialist Block */}
-            <div className="px-4">
-              <Card className="p-6 shadow-lg border-2">
-                <div className="text-center space-y-4">
-                  <div className="relative w-24 h-24 mx-auto">
-                    <img 
-                      src={doctorImage} 
-                      alt="Dr. Ricardo Silva" 
-                      className="w-full h-full object-cover rounded-full border-4 border-health-blue"
-                    />
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground">
-                      Dr. Ricardo Silva
-                    </h3>
-                    <p className="text-health-blue font-semibold">
-                      Neurocientista
-                    </p>
-                  </div>
-                  
-                  <blockquote className="italic text-lg text-muted-foreground">
-                    "Sua mente nunca foi feita para desaparecer — é hora de trazê-la de volta à vida."
-                  </blockquote>
-                  
-                  <div className="flex flex-wrap justify-center gap-2 text-xs">
-                    <span className="bg-health-blue text-health-blue-foreground px-2 py-1 rounded-full">
-                      +20 anos de pesquisa
-                    </span>
-                    <span className="bg-health-blue text-health-blue-foreground px-2 py-1 rounded-full">
-                      Neurociência aplicada
-                    </span>
-                  </div>
-                </div>
-              </Card>
+            {/* Scientific References Block */}
+            <div className="w-full">
+              <img 
+                src={referenciasImage} 
+                alt="Referências Científicas e Estudos Clínicos" 
+                className="w-full h-auto object-cover"
+              />
             </div>
 
             {/* Main Offer Block */}
-            <div className="bg-health-black text-health-black-foreground py-8 px-4">
+            <div className="bg-health-black text-health-black-foreground py-12 px-4">
               <div className="max-w-md mx-auto text-center space-y-6">
                 {/* Pricing */}
                 <div className="space-y-2">
@@ -184,7 +154,7 @@ export default function HealthLanding() {
                     className="w-full bg-health-yellow hover:bg-health-yellow/90 text-health-yellow-foreground font-bold text-lg py-6 rounded-xl transition-all duration-300 transform hover:scale-105"
                     onClick={() => window.open(CHECKOUT_URL, '_blank')}
                   >
-                    SIM, EU QUERO ATIVAR MINHA MENTE!
+                    EU QUERO ATIVAR MINHA MENTE!
                   </Button>
 
                   {/* Payment Methods */}
