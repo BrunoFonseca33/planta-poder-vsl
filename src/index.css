@@ -36,6 +36,22 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
+    /* Health Advertorial Colors */
+    --health-red: 0 85% 45%;
+    --health-red-foreground: 0 0% 100%;
+    
+    --health-green: 120 100% 45%;
+    --health-green-foreground: 0 0% 0%;
+    
+    --health-yellow: 45 100% 55%;
+    --health-yellow-foreground: 220 100% 25%;
+    
+    --health-blue: 200 85% 55%;
+    --health-blue-foreground: 0 0% 100%;
+    
+    --health-black: 0 0% 8%;
+    --health-black-foreground: 0 0% 100%;
+
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;

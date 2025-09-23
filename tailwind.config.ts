@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        health: {
+          red: "hsl(var(--health-red))",
+          "red-foreground": "hsl(var(--health-red-foreground))",
+          green: "hsl(var(--health-green))",
+          "green-foreground": "hsl(var(--health-green-foreground))",
+          yellow: "hsl(var(--health-yellow))",
+          "yellow-foreground": "hsl(var(--health-yellow-foreground))",
+          blue: "hsl(var(--health-blue))",
+          "blue-foreground": "hsl(var(--health-blue-foreground))",
+          black: "hsl(var(--health-black))",
+          "black-foreground": "hsl(var(--health-black-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
