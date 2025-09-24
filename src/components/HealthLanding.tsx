@@ -15,7 +15,7 @@ import masterImage from "@/assets/master.webp";
 import eloImage from "@/assets/elo.webp";
 import pixImage from "@/assets/pix.webp";
 
-const CHECKOUT_URL = "https://checkout.example.com/health-brain-boost";
+const CHECKOUT_URL = "https://pay.zouti.com.br/checkout?poi=prod_offer_bljq2tfdor99v9t8giaaq4";
 
 export default function HealthLanding() {
   const [showContent, setShowContent] = useState(false);
