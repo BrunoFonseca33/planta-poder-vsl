@@ -60,6 +60,8 @@ export default {
         health: {
           red: "hsl(var(--health-red))",
           "red-foreground": "hsl(var(--health-red-foreground))",
+          "red-dark": "hsl(var(--health-red-dark))",
+          "red-dark-foreground": "hsl(var(--health-red-dark-foreground))",
           green: "hsl(var(--health-green))",
           "green-foreground": "hsl(var(--health-green-foreground))",
           yellow: "hsl(var(--health-yellow))",

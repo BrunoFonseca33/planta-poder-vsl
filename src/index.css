@@ -39,6 +39,8 @@ All colors MUST be HSL.
     /* Health Advertorial Colors */
     --health-red: 0 85% 45%;
     --health-red-foreground: 0 0% 100%;
+    --health-red-dark: 4 83% 35%;
+    --health-red-dark-foreground: 0 0% 100%;
     
     --health-green: 120 100% 45%;
     --health-green-foreground: 0 0% 0%;
