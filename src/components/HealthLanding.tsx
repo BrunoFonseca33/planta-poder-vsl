@@ -24,14 +24,14 @@ export default function HealthLanding() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContent(true);
-    }, 20000); // 20 seconds
+    }, 280000); // 280 seconds
 
     return () => clearTimeout(timer);
   }, []);
 
   const handleVideoTimeUpdate = (currentTime: number) => {
     setVideoTime(currentTime);
-    if (currentTime >= 20) {
+    if (currentTime >= 280) {
       setShowContent(true);
     }
   };
