@@ -79,9 +79,7 @@ export default function HealthLanding() {
         {/* Fixed message below VSL */}
         <div className="px-4 mb-8">
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M4 5a2 2 0 00-2 2v6a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-            </svg>
+            <span className="text-lg">📷</span>
             <span>Fique até o final para destravar a sua memória</span>
           </div>
         </div>
