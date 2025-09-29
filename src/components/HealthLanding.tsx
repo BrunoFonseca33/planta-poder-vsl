@@ -18,22 +18,11 @@ import pixImage from "@/assets/pix.webp";
 const CHECKOUT_URL = "https://pay.zouti.com.br/checkout?poi=prod_offer_bljq2tfdor99v9t8giaaq4";
 
 export default function HealthLanding() {
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true); // Oferta liberada imediatamente
   const [videoTime, setVideoTime] = useState(0);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 280000); // 280 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
 
   const handleVideoTimeUpdate = (currentTime: number) => {
     setVideoTime(currentTime);
-    if (currentTime >= 280) {
-      setShowContent(true);
-    }
   };
 
   return (
